@@ -4,8 +4,8 @@
 
     * When a JS code file is executed,
         -> a Global Execution Context is made and this is referred to or stored in 'this'.
-        -> 'this' object is different in different environments e.g. Node, Deeno.
-        -> 'this' object in browser holds 'Window'
+        -> 'this' object is different in different environments e.g. Node, Deeno, browser
+        -> 'this' object in browser holds 'Window Object'
         -> Keynote: 'Global Execution Context' will always be there. No matter if it's empty but it will be there always.
         -> JavaScript is 'Single Threaded.'
 
@@ -21,7 +21,7 @@
         2. Execution Phase 
             --> Functions are executed.
 
-    * How a JavaScript file runs?
+    * How a JavaScript file is executed?
         -> Let's see a code 
 
         ```js
@@ -38,7 +38,7 @@
             let result2 = addNum(12, 6);
 
         ```
-            --> (1) Global Execution Context is made and stored in 'this'
+            --> (1) Global Execution Context is made and stored in 'this' object
             --> (2) Memory Phase 
                 ---> memory for variables is allocated 
                 ---> var1       <-     undefined
@@ -60,7 +60,8 @@
 
                                         New Variable Environmet -> variables are stored separately from global context
                                         Execution Thread        -> to perform various calculations
-                                        ----> In New Execution Context, both phases i.e. Memory Phase and Execution phase will be made from scratch.
+
+                                        ----> In New Execution Context, both phases i.e. Memory Phase and Execution phase will be performed from scratch.
 
                                             (1) New Executional Context is created (for addNum())
                                             (2) Memory Phase 
